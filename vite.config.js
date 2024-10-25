@@ -8,5 +8,5 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000 // Set this to your preferred limit in KB
   },
-  base: '/casemixwebapp/', // Add this line
+ 
 })
