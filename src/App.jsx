@@ -19,12 +19,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SplashScreen />} />
-        <Route path="/home" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/forgot-password" element={<ForgetPassword />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/dashboard" element={<Dashboard />}>
+        <Route path="" element={<SplashScreen />} />
+        <Route path="home" element={<LandingPage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="forgot-password" element={<ForgetPassword />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="dashboard" element={<Dashboard />}>
           <Route path="coding" element={<CodingPage />} />
           <Route path="patient-list" element={<PatientListPage />} />
           <Route path="profile" element={<ProfilePage />} />
@@ -32,7 +32,7 @@ function App() {
           <Route path="faq" element={<Faq />} />
           <Route index element={<HomePage />} />
         </Route>
-        <Route path="/dashboardpublic" element={<DashboardPublic />}>
+        <Route path="dashboardpublic" element={<DashboardPublic />}>
           <Route path="profile" element={<ProfilePage />} />
           <Route path="hospital-list" element={<HospitalList />} />
           <Route path="help-center" element={<HelpCenter />} />
