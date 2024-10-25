@@ -15,7 +15,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import "./HospitalList.css";
-import HospitalMap from "./hospital-list-tabs/HospitalMap";
+import HospitalMap from "./hospital-list-tabs/HospitalMap.jsx";
 
 const HospitalList = () => {
   const navigate = useNavigate();

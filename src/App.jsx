@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SplashScreen from "./components/SplashScreen";
-import Login from "./components/authentification/Login";
-import ForgetPassword from "./components/authentification/ForgetPassword";
-import SignUp from "./components/authentification/SignUp";
-import Dashboard from "./components/Dashboard";
-import DashboardPublic from "./components/DashboardPublic";
-import HomePage from "./components/pages/HomePage";
-import HomePagePublic from "./components/pages/HomePagePublic";
-import CodingPage from "./components/pages/CodingPage";
-import HospitalList from "./components/pages/HospitalList";
-import PatientListPage from "./components/pages/PatientListPage";
-import ProfilePage from "./components/pages/ProfilePage";
-import HelpCenter from "./components/pages/HelpCenter";
-import Faq from "./components/pages/Faq";
-import LandingPage from "./components/LandingPage";
+import SplashScreen from "./components/SplashScreen.jsx";
+import Login from "./components/authentification/Login.jsx";
+import ForgetPassword from "./components/authentification/ForgetPassword.jsx";
+import SignUp from "./components/authentification/SignUp.jsx";
+import Dashboard from "./components/Dashboard.jsx";
+import DashboardPublic from "./components/DashboardPublic.jsx";
+import HomePage from "./components/pages/HomePage.jsx";
+import HomePagePublic from "./components/pages/HomePagePublic.jsx";
+import CodingPage from "./components/pages/CodingPage.jsx";
+import HospitalList from "./components/pages/HospitalList.jsx";
+import PatientListPage from "./components/pages/PatientListPage.jsx";
+import ProfilePage from "./components/pages/ProfilePage.jsx";
+import HelpCenter from "./components/pages/HelpCenter.jsx";
+import Faq from "./components/pages/Faq.jsx";
+import LandingPage from "./components/LandingPage.jsx";
 
 function App() {
   return (
