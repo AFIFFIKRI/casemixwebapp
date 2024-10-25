@@ -21,16 +21,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade } from "react-awesome-reveal";
 import "./LandingPage.css";
-import bannerimg1 from "../assets/landingpage/banner-3.JPG";
-import bannerimg2 from "../assets/landingpage/banner-4.JPG";
-import infoimg1 from "../assets/landingpage/infosec-1.JPG";
-import infoimg2 from "../assets/landingpage/infosec-2.JPG";
-import infoimg3 from "../assets/landingpage/infosec-3.JPG";
-import logoimg1 from "../assets/landingpage/logo-1.PNG";
-import logoimg2 from "../assets/landingpage/logo-2.PNG";
-import logoimg3 from "../assets/landingpage/logo-3.PNG";
-import logoimg4 from "../assets/landingpage/logo-4.PNG";
-import logoimg5 from "../assets/landingpage/logo-5.PNG";
+import bannerimg1 from "../assets/landingpage/banner-3.jpg";
+import bannerimg2 from "../assets/landingpage/banner-4.jpg";
+import infoimg1 from "../assets/landingpage/infosec-1.jpg";
+import infoimg2 from "../assets/landingpage/infosec-2.jpg";
+import infoimg3 from "../assets/landingpage/infosec-3.jpg";
+import logoimg1 from "../assets/landingpage/logo-1.png";
+import logoimg2 from "../assets/landingpage/logo-2.png";
+import logoimg3 from "../assets/landingpage/logo-3.png";
+import logoimg4 from "../assets/landingpage/logo-4.png";
+import logoimg5 from "../assets/landingpage/logo-5.png";
 import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
