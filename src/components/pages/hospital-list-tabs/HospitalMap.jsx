@@ -11,7 +11,7 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { Icon, divIcon, point } from "leaflet";
-import locationIcon from "../../../assets/icon/hospital-2.PNG";
+import locationIcon from "../../../assets/icon/hospital-2.png";
 
 const HospitalMap = () => {
   const customIcon = new Icon({
