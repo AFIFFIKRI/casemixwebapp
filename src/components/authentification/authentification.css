@@ -1,0 +1,45 @@
+.login-screen, .forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+#logo-img {
+  width: 65px;
+  height: 80px;
+}
+
+#login-card {
+  width: 22rem;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+#login-button, #reset-button {
+  background-color: #364DB9;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#back-button {
+  background-color: #FFFFFF;
+  border-color: #364DB9;
+  color: #364DB9;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.forgot-password, .sign-up {
+  font-size: 12px;
+}
+
+#forget-password-text, #sign-up-text {
+  text-align: left;
+}
+
+#fullName, #email, #password, #confirmPassword, #phone {
+  border-color: #364DB9;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

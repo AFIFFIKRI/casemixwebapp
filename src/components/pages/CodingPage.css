@@ -1,0 +1,215 @@
+#coding-card {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#codingpage-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .tabs a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .tabs a.active {
+    border-bottom: 2px solid #364DB9;
+    color: #364DB9;
+  }
+  
+  .tab-content {
+    border: none;
+    min-height: 200px;
+    padding: 10px;
+  }
+  
+  .wizard-navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #mrn, #fullname, #insuranceNumber, #gender, #dob, #age, #ageInDaysRef, #weight,
+  #patientType, #doctorName, #diagnosis, #subAcuteScore, #chronicScore, #dischargeStatus, #procedures {
+    border-color: #364DB9;
+  }
+  
+  .prev-button,
+  .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #364DB9;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  #save-as-draf-button {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-color: #3e59d6;
+    color: #3e59d6;
+    margin-top: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .prev-button {
+    background-color: #6c757d;
+  }
+  
+  .prev-button:hover {
+    background-color: lightgray;
+  }
+
+  .next-button:hover {
+    background-color: #3e59d6;
+  }
+
+  .save-button:hover {
+    background-color: lightgreen;
+  }
+  
+  .prev-button:disabled,
+  .next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  #diagnosis-filter {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #364DB9;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  #diagnosis-filter-remove {
+    margin-left: 8px;
+    font-weight: bold;
+    color: #fff; 
+    cursor: pointer;
+  }
+
+  #patient-list-card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#search-icon-input {
+    border-right: none;
+    border-color: #364DB9;
+}
+
+#search-icon-input-icon {
+    background-color: transparent;
+    border-left: none;
+    border-color: #364DB9;
+}
+
+#group-card {
+  border-color: #364DB9;
+}
+
+#group-card-header, #group-card-footer {
+  background: transparent;
+  border: none;
+}
+
+#group-checkbox {
+  margin-top: 6px;
+  padding: 12px;
+}
+
+#group-button {
+  background-color: #364DB9;
+  border-color: #364DB9;
+}
+
+#group-button-download {
+  border-color: #364DB9;
+  background-color: #fff;
+  color: #364DB9;
+}
+
+  @media (max-width: 768px) {
+  .prev-button,
+  .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #364DB9;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50%;
+  }
+
+  #save-as-draf-button {
+    width: 100%;
+  }
+
+  .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50%;
+  }
+
+  .prev-button {
+    background-color: #6c757d;
+  }
+  
+  .prev-button:hover {
+    background-color: lightgray;
+  }
+
+  .next-button:hover {
+    background-color: #3e59d6;
+  }
+
+  .save-button:hover {
+    background-color: lightgreen;
+  }
+  
+  .prev-button:disabled,
+  .next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}

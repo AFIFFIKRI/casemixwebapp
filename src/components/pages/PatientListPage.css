@@ -1,0 +1,20 @@
+#patient-list-card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#search-icon-input {
+    border-right: none;
+}
+
+#search-icon-input-icon {
+    background-color: transparent;
+    border-left: none;
+}
+
+#table-checkbox {
+    width: 20px;
+    height: 20px;
+}
