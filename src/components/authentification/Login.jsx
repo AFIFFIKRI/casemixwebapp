@@ -20,6 +20,11 @@ const Login = () => {
     navigate("/dashboard");
   };
 
+  const handleLogin2 = (e) => {
+    e.preventDefault();
+    navigate("/dashboardpublic");
+  };
+
   const handleBack = () => {
     navigate("/home");
   };
@@ -68,11 +73,36 @@ const Login = () => {
                   </div>
                 </Form>
 
-                <div className="d-grid gap-2 mb-3">
+                <Form onSubmit={handleLogin2}>
+                  <Form.Control
+                    className="mb-3"
+                    id="email"
+                    type="email"
+                    placeholder="E-mail"
+                    required
+                    size="md"
+                  />
+                  <Form.Control
+                    className="mb-3"
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                    required
+                    size="md"
+                  />
+                  <div className="d-grid gap-2 mb-3">
+                    <Button type="submit" id="login-button" size="md">
+                      Login as public
+                    </Button>
+                  </div>
+                </Form>
+
+                
+                {/* <div className="d-grid gap-2 mb-3">
                   <Button href="/dashboardpublic" type="submit" id="login-button" size="md">
                   Login as public
                   </Button>
-                </div>
+                </div> */}
 
                 <p className="forgot-password">
                   <Link
