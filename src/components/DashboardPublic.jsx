@@ -56,7 +56,7 @@ const DashboardPublic = () => {
             />
           </IconContext.Provider>
 
-          <Navbar.Brand href="/dashboardpublic" className="pt-3">
+          <Navbar.Brand className="pt-3">
             <Row>
               <Col className="g-0" id="logo-img-dashboard-col">
                 <Image

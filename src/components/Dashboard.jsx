@@ -52,7 +52,7 @@ const Dashboard = () => {
               aria-label="Toggle Sidebar"
             />
           </IconContext.Provider>
-          <Navbar.Brand href="/dashboard" className='pt-3'>
+          <Navbar.Brand className='pt-3'>
             <Row>
               <Col className='g-0' id='logo-img-dashboard-col'><Image className="mb-3" id="logo-img-dashboard" src={casemixlogodark}/></Col>
               <Col className='pt-1'><font id='logo-text'>Casemix</font></Col>
