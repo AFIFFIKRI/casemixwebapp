@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Navbar,
@@ -13,8 +14,6 @@ import {
 } from "react-bootstrap";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FiLogIn } from "react-icons/fi";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import CarouselMulti from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -31,7 +30,6 @@ import logoimg2 from "../assets/landingpage/logo-2.png";
 import logoimg3 from "../assets/landingpage/logo-3.png";
 import logoimg4 from "../assets/landingpage/logo-4.png";
 import logoimg5 from "../assets/landingpage/logo-5.png";
-import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -61,13 +59,6 @@ function LandingPage() {
 
   const logos = [logoimg1, logoimg2, logoimg3, logoimg4, logoimg5];
 
-  const responsive = {
-    superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 5 },
-    desktop: { breakpoint: { max: 1024, min: 768 }, items: 3 },
-    tablet: { breakpoint: { max: 768, min: 464 }, items: 2 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
-  };
-
   const settings = {
     infinite: true, // Infinite loop
     speed: 8000, // The speed of scrolling (slower for smooth effect)
@@ -79,8 +70,6 @@ function LandingPage() {
     arrows: false, // Hide navigation arrows
     pauseOnHover: false, // Keep scrolling on hover
   };
-
-
 
   return (
     <div style={{ backgroundColor: "#f0fbff" }}>
@@ -109,8 +98,8 @@ function LandingPage() {
                 className="ml-3"
                 onClick={handleLogin}
               >
-                <FiLogIn />&nbsp;
-                Login
+                <FiLogIn />
+                &nbsp; Login
               </Button>
             </Nav>
           </Navbar.Collapse>
@@ -263,12 +252,7 @@ function LandingPage() {
 
             <Row>
               <Card>
-                {/* <CarouselMulti
-                  responsive={responsive}
-                  infinite={true}
-                  autoPlay={true}
-                  arrows={false}
-                >
+                <Slider {...settings}>
                   {logos.map((logo, index) => (
                     <div key={index} className="logo-container">
                       <img
@@ -278,19 +262,7 @@ function LandingPage() {
                       />
                     </div>
                   ))}
-                </CarouselMulti> */}             
-                  <Slider {...settings}>
-                    {logos.map((logo, index) => (
-                      <div key={index} className="logo-container">
-                        <img
-                          src={logo}
-                          alt={`Logo ${index}`}
-                          className="logo-image"
-                        />
-                      </div>
-                    ))}
-                  </Slider>
-                
+                </Slider>
               </Card>
             </Row>
           </Fade>
