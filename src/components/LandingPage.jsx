@@ -20,6 +20,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade } from "react-awesome-reveal";
 import "./LandingPage.css";
+import casemixlogowhite from "../assets/logo/logo_white.png";
 import bannerimg1 from "../assets/landingpage/banner-3.jpg";
 import bannerimg2 from "../assets/landingpage/banner-4.jpg";
 import infoimg1 from "../assets/landingpage/infosec-1.jpg";
@@ -76,8 +77,19 @@ function LandingPage() {
       {/* Navigation Bar */}
       <Navbar className="navbar-section" expand="lg" sticky="top">
         <Container>
-          <Navbar.Brand className="fw-bold" href="/home">
-            CASEMIX
+          <Navbar.Brand href="/home">
+            <Row>
+              <Col className="g-0" id="logo-img-nav-col">
+                <Image
+                  className="mb-0"
+                  id="logo-img-nav"
+                  src={casemixlogowhite}
+                />
+              </Col>
+              <Col className="pt-1">
+                <font id="logo-text">Casemix</font>
+              </Col>
+            </Row>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
