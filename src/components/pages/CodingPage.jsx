@@ -27,6 +27,16 @@ const CodingPage = () => {
     ageInDays: '',
     weight: '',
     patientType: '',
+    admissionDate:'',
+    dischargeDate:'',
+    specialProcedure:'',
+    specialProsthesis:'',
+    specialInvestigation:'',
+    specialDrug:'',
+    ownership:'',
+    regional:'',
+    hospitalType:'',
+    tariffClass:'',
     doctorName: '',
     diagnosis: '',
     subAcuteScore: '',
@@ -35,8 +45,9 @@ const CodingPage = () => {
     procedures: '',
   });
 
-  const wizardSteps = ['Personal', 'Clinical', 'Review'];
-  const allSteps = [...wizardSteps, 'Group', 'Export'];
+  const wizardSteps = ['Patient Information', 'Clinical Information', 'Review'];
+  // const allSteps = [...wizardSteps, 'Group', 'Export'];
+  const allSteps = [...wizardSteps];
 
   const nextStep = useCallback(() => {
     if (currentStep === 0 && validatePersonalPage.current && !validatePersonalPage.current()) {
@@ -69,6 +80,16 @@ const CodingPage = () => {
           ageInDays: '',
           weight: '',
           patientType: '',
+          admissionDate:'',
+          dischargeDate:'',
+          specialProcedure:'',
+          specialProsthesis:'',
+          specialInvestigation:'',
+          specialDrug:'',
+          ownership:'',
+          regional:'',
+          hospitalType:'',
+          tariffClass:'',
           doctorName: '',
           diagnosis: '',
           subAcuteScore: '',
