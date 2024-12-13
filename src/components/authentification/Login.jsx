@@ -55,7 +55,7 @@ const Login = () => {
                     id="email"
                     type="email"
                     placeholder="E-mail"
-                    required
+                    // required
                     size="md"
                   />
                   <Form.Control
@@ -63,7 +63,7 @@ const Login = () => {
                     id="password"
                     type="password"
                     placeholder="Password"
-                    required
+                    // required
                     size="md"
                   />
                   <div className="d-grid gap-2 mb-3">
@@ -73,25 +73,9 @@ const Login = () => {
                   </div>
                 </Form>
 
-                <Form onSubmit={handleLogin2}>
-                  <Form.Control
-                    className="mb-3"
-                    id="email"
-                    type="email"
-                    placeholder="E-mail"
-                    required
-                    size="md"
-                  />
-                  <Form.Control
-                    className="mb-3"
-                    id="password"
-                    type="password"
-                    placeholder="Password"
-                    required
-                    size="md"
-                  />
+                <Form >
                   <div className="d-grid gap-2 mb-3">
-                    <Button type="submit" id="login-button" size="md">
+                    <Button type="submit" id="login-button" size="md" onClick={handleLogin2}>
                       Login as public
                     </Button>
                   </div>
