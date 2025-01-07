@@ -52,7 +52,7 @@ const MainDashboard = () => {
         <Card className='mb-3 p-2 h-100' style={{border: 'none', borderRadius: 15,}}>
           <Card.Body>
           <Row className="mb-3">
-            <Col xs={3} className="d-flex justify-content-center align-items-center">
+            <Col xs={4} className="d-flex justify-content-center align-items-center">
               <Image 
                 src={UserImg}
                 width="100"
@@ -61,7 +61,7 @@ const MainDashboard = () => {
                 alt="User"
               />
             </Col>
-            <Col xs={9} style={{justifyContent: 'center', alignContent: 'center'}}>
+            <Col xs={8} style={{justifyContent: 'center', alignContent: 'center'}}>
               <div style={{ fontSize: 18, fontWeight: 'bold' }}>Muhammad Hamsani Irwan Hamzah</div>
               <Row>
                 <Col xs={6} style={{ fontSize: 13 }}>Age: 33</Col>
