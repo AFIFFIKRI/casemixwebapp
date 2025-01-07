@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.menulist {
+  margin-top: 1rem;
+}
+
+.custom-login-button {
+  border-color: #fff; /* Bootstrap primary color */
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 3rem;
+  margin: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-login-button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #252525;
+}
+
+.login-container {
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: translate('-50%','-50%');
+}
