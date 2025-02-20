@@ -53,10 +53,40 @@ const CodingDashboard = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // const handleDateChange = (date) => {
+  //   setFormData({ ...formData, birthDate: date });
+  //   setCalendarOpen(false);
+  // };
+
   const handleDateChange = (date) => {
-    setFormData({ ...formData, birthDate: date });
+    const today = new Date();
+    const birthDate = new Date(date);
+  
+    // Calculate age in years
+    let ageYears = today.getFullYear() - birthDate.getFullYear();
+    const birthMonth = birthDate.getMonth();
+    const birthDay = birthDate.getDate();
+    const currentMonth = today.getMonth();
+    const currentDay = today.getDate();
+  
+    // Adjust age if birth date hasn't occurred yet in the current year
+    if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
+      ageYears--;
+    }
+  
+    // Calculate age in days
+    const ageDays = Math.floor((today - birthDate) / (1000 * 60 * 60 * 24));
+  
+    setFormData({
+      ...formData,
+      birthDate: date,
+      ageYears: ageYears.toString(), // Convert to string for the TextField
+      ageDays: ageDays.toString(),
+    });
+  
     setCalendarOpen(false);
   };
+  
 
   const handleAddRow = () => {
     setRows([...rows, { id: rows.length + 1, doctorName: '' }]);
@@ -93,6 +123,7 @@ const CodingDashboard = () => {
   const handleDecrement = (field) => {
     setFormData({ ...formData, [field]: formData[field] > 0 ? formData[field] - 1 : 0 });
   };
+
 
   const renderStepContent = (step) => {
     if (step === 0) {
@@ -659,7 +690,35 @@ const CodingDashboard = () => {
           </form>
         );
     } else if (step === 2) {
-      return <Typography>Step 3: Review</Typography>;
+      return (
+        <Box sx={{ p: 2 }}>
+          <Typography variant="h6">Step 3: Review</Typography>
+          <Box sx={{ mt: 2 }}>
+            <Typography><strong>MRN Number:</strong> {formData.mrnNumber}</Typography>
+            <Typography><strong>Full Name:</strong> {formData.fullName}</Typography>
+            <Typography><strong>Insurance:</strong> {formData.insurance}</Typography>
+            <Typography><strong>Gender:</strong> {formData.gender}</Typography>
+            <Typography><strong>Date of Birth:</strong> {formData.birthDate.toDateString()}</Typography>
+            <Typography><strong>Age (Years):</strong> {formData.ageYears}</Typography>
+            <Typography><strong>Age (Days):</strong> {formData.ageDays}</Typography>
+            <Typography><strong>Weight (Newborn):</strong> {formData.weight}</Typography>
+            <Typography><strong>Patient Type:</strong> {formData.patientType}</Typography>
+            <Typography><strong>Admission Date:</strong> {formData.admissionDate.toDateString()}</Typography>
+            <Typography><strong>Discharge Date:</strong> {formData.dischargeDate.toDateString()}</Typography>
+    
+            <Typography variant="h6" sx={{ mt: 2 }}>Doctors</Typography>
+            {rows.length > 0 ? (
+              <ul>
+                {rows.map((row) => (
+                  <li key={row.id}>{row.doctorName}</li>
+                ))}
+              </ul>
+            ) : (
+              <Typography>No doctors added</Typography>
+            )}
+          </Box>
+        </Box>
+      );
     }
     return <Typography>Unknown step</Typography>;
   };
